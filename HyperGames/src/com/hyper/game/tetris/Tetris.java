@@ -21,6 +21,8 @@ import com.hyper.io.KeyHandler;
 import com.hyper.io.ResourceLocation;
 
 public class Tetris extends Game {
+	private static final long serialVersionUID = 8910691708620850177L;
+
 	static {
 		LINE = new Pattern(new Vector2i[] {new Vector2i(), new Vector2i(0, 1), new Vector2i(0, -1), new Vector2i(0, -2)});
 		T = new Pattern(new Vector2i[] {new Vector2i(), new Vector2i(0, 1), new Vector2i(-1, 0), new Vector2i(1, 0)});
@@ -79,7 +81,7 @@ public class Tetris extends Game {
 		this.score = 0;
 		this.next = randomPattern();
 		this.nextColor = (int) (Math.random()*Integer.MAX_VALUE);
-		int off = JOptionPane.showConfirmDialog(instance, "Tetris", "Jouer en déplacements continus ?", JOptionPane.YES_NO_OPTION);
+		int off = JOptionPane.showConfirmDialog(instance, "Tetris", "Jouer en dï¿½placements continus ?", JOptionPane.YES_NO_OPTION);
 		this.discrete = off == 1;
 	}
 

@@ -47,16 +47,16 @@ public class KeyHandler implements KeyListener {
 
 	@Override
 	public void keyTyped(KeyEvent e) {}
-	
+
 	public boolean isKeyPressed(int keyCode) {
-		return KeyState.PRESSED.equals(keys.get(new Integer(keyCode)));
+		return KeyState.PRESSED.equals(keys.get((Integer)keyCode));
 	}
 
 	public boolean isKeyDown(int keyCode) {
-		return KeyState.DOWN.equals(keys.get(new Integer(keyCode))) || isKeyPressed(keyCode);
+		return KeyState.DOWN.equals(keys.get((Integer)keyCode)) || isKeyPressed(keyCode);
 	}
 
 	public boolean isKeyReleased(int keyCode) {
-		return KeyState.RELEASED.equals(keys.get(new Integer(keyCode)));
+		return KeyState.RELEASED.equals(keys.get((Integer)keyCode));
 	}
 }

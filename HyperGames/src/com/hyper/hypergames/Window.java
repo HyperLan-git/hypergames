@@ -11,6 +11,8 @@ import com.hyper.game.tetris.Tetris;
 import com.hyper.io.KeyHandler;
 
 public class Window extends JFrame {
+	private static final long serialVersionUID = -7952681873884432960L;
+
 	public final Game[] games = new Game[] {
 			new SpaceInvaders(this), new Tetris(this), new Pong(this)
 	};

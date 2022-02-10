@@ -20,6 +20,7 @@ import com.hyper.hypergames.Window;
 import com.hyper.io.ResourceLocation;
 
 public class SpaceInvaders extends Game {
+	private static final long serialVersionUID = 2315300006444781168L;
 	public static final int WIDTH = 800, PLAYER_SPEED = 6, PLAYER_Y = -200, SHOOT_TIME = 0;
 	public static final ResourceLocation ENEMY_TEXTURE = new ResourceLocation("textures/fighter.png"),
 			PLAYER_TEXTURE = new ResourceLocation("textures/spaceship.png");

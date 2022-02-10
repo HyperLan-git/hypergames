@@ -11,6 +11,8 @@ import javax.swing.JPanel;
 import com.hyper.game.Game;
 
 public class MainMenu extends JPanel implements ActionListener {
+	private static final long serialVersionUID = 8583981980544232702L;
+
 	private Window window;
 	
 	private Game[] games;

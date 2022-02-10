@@ -12,6 +12,7 @@ import org.joml.Vector2i;
 import com.hyper.hypergames.Window;
 
 public abstract class Game extends JPanel {
+	private static final long serialVersionUID = 64706040616152234L;
 	protected Window instance;
 	
 	public Game(Window instance) {

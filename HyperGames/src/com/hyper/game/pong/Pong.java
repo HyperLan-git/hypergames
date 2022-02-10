@@ -19,6 +19,8 @@ import com.hyper.hypergames.Window;
 import com.hyper.io.KeyHandler;
 
 public class Pong extends Game {
+	private static final long serialVersionUID = 6821144182260842988L;
+
 	public static final int HEIGHT = 1000, WIDTH = 1500,  BALL_SIZE = 10;
 
 	private int score1 = 0, score2 = 0;
@@ -59,9 +61,9 @@ public class Pong extends Game {
 		handleCollisions();
 
 		if(score1 > 100)
-			JOptionPane.showMessageDialog(this, "Game over yeaaaah ! p1 a gagné");
+			JOptionPane.showMessageDialog(this, "Game over yeaaaah ! p1 a gagnï¿½");
 		if(score2 > 100)
-			JOptionPane.showMessageDialog(this, "Game over yeaaaah ! p2 a gagné");
+			JOptionPane.showMessageDialog(this, "Game over yeaaaah ! p2 a gagnï¿½");
 	}
 
 	@Override
